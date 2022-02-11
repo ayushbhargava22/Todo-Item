@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
+  <body class="dark">
     <div class="background-image"></div>
     <div class="wrapper">
       <!-- header -->
@@ -30,8 +30,8 @@
         <div class="title">
           <h1>TODO</h1>
         </div>
-        <div class="mode-toggle">
-          <img src="/images/icon-sun.svg" alt="moon" />
+        <div class="mode-toggle" id="sun">
+          <img src="/images/icon-sun.svg" alt="moon" class="mode--toggle" />
         </div>
       </div>
       <!-- input space -->
@@ -45,22 +45,14 @@
       </div>
       <!-- Todo items space -->
       <div class="todo-items-container">
-        <ul class="todo-items">
-          <li class="todo-item">
-            <div class="content">
-              <button></button>
-              Hello!!
-            </div>
-            <img src="./images/icon-cross.svg" />
-          </li>
-        </ul>
+        <ul class="todo-items"></ul>
       </div>
       <!-- Buttons -->
       <div class="button-container">
         <p class="todo-left">0 items left</p>
         <div class="todo-actions">
-          <label>
-            <input type="radio" name="filter" id="all" />
+          <label class="active">
+            <input type="radio" name="filter" id="all" checked />
             <span>All</span>
           </label>
           <label>
